@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सरकारी योजनाएँ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* 🔷 Header Box */
+    header {
+      position: relative;
+      text-align: center;
+      background: linear-gradient(90deg, #004aad, #00c853);
+      color: white;
+      padding: 50px 10px 40px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* 🧾 Title + Subtitle */
+    header h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 8px 0 25px;
+      opacity: 0.9;
+      font-size: 17px;
+    }
+
+    /* 🧑‍💼 PM & CM Images */
+    .pm-img, .cm-img {
+      position: absolute;
+      top: 20px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      border: 4px solid white;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .pm-img {
+      left: 25px;
+    }
+    .cm-img {
+      right: 25px;
+    }
+    .pm-img img, .cm-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 🔸 Tabs (Central / State Buttons) */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .tabs button {
+      background: white;
+      color: #333;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .tabs button:hover {
+      transform: scale(1.08);
+      background: #ffcc00;
+    }
+    .tabs button.active {
+      background: #ffcc00;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 650px) {
+      .pm-img, .cm-img {
+        position: static;
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+      }
+      header {
+        padding-top: 20px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      .tabs button {
+        width: 80%;
+        font-size: 15px;
+      }
+    }
+     .social { margin-top:20px; display:flex; gap:25px; position: relative; left: 30%;}
+  .social a { font-size:22px; width:45px; height:45px; display:flex; align-items:center; justify-content:center; border-radius:50%; color:white; transition:0.3s; }
+  .social a:nth-child(1) { background:#1877f2; }
+  .social a:nth-child(2) { background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .social a:nth-child(3) { background:#1da1f2; }
+  .social a:nth-child(4) { background:#ff0000; }
+  .social a:nth-child(5) { background:#25d366; }
+  .social a:hover { transform:scale(1.2); box-shadow:0 0 15px rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- 🧑‍💼 PM Image -->
+    <div class="pm-img">
+      <img src="pm.png" alt="प्रधानमंत्री">
+    </div>
+
+    <!-- 👨‍💼 CM Image -->
+    <div class="cm-img">
+      <img src="cm.jpg" alt="मुख्यमंत्री">
+    </div>
+
+    <!-- Title & Tabs -->
+    <h1>    छत्तीसगढ़ श्रम विभाग की  प्रमुख योजनाए योजनाएँ</h1>
+    <p>यहाँ देखें सभी प्रमुख सरकारी योजनाओं की जानकारी एक ही स्थान पर</p>
+    
+    <div class="tabs">
+    
+      <button>🏠 राज्य सरकार योजनाएँ</button>
+    </div>
+    <center>
+      <div class="social" >
+      <a href="https://www.instagram.com/kewal_nishad0.0/?igsh=MWt2YXpqM3R1M2J1cQ%3D%3D#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kewal_nishad0.0/?igsh=MWt2YXpqM3R1M2J1cQ%3D%3D#"><i class="fab fa-instagram"></i></a>
+     
+      <a href="https://www.youtube.com/@kewalnishad0.0"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/7999569059" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+ </center>
+  </header>
+ <br>
+<!-- Search Box -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="कृपया हिन्दी मे खोजे  / सर्च " />
+</div>
+
+<style>
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: box-shadow .2s ease;
+}
+#searchInput:focus {
+  box-shadow: 0 0 8px rgba(11,116,218,0.6);
+  border-color: #0b74da;
+}
+</style>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.grid .card');
+  
+  cards.forEach(card => {
+    const title = card.querySelector('.title').innerText.toLowerCase();
+    // कोई भी word match होना चाहिए
+    const queryWords = query.split(' ').filter(Boolean);
+    let match = queryWords.length === 0 ? true : queryWords.some(word => title.includes(word));
+    card.style.display = match ? 'block' : 'none';
+  });
+});
+</script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{ --card-bg:#fff; --accent:#0b74da; --shadow:0 6px 18px rgba(11,23,54,0.08);} 
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',"Helvetica Neue",Arial; margin:24px; background:#f6f8fb; color:#111}
+    h1{font-size:1.4rem; margin-bottom:16px; text-align:center}
+
+    /* Top Buttons */
+    .top-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:25px;justify-content:center; margin-top: 10%;}
+    .btn{display:flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:0.9rem;font-weight:500;box-shadow:0 3px 10px rgba(0,0,0,0.1);transition:background .2s ease,transform .2s ease}
+    .btn i{font-size:1rem}
+    .btn:hover{background:#084f9c;transform:translateY(-2px)}
+
+    /* Grid */
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(3,2.5fr); width: 100%;}
+    .card{background:var(--card-bg);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease;text-decoration:none;color:inherit}
+    .card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(11,23,54,0.12)}
+    .card img{width:100%;height:200px;object-fit:contain;display:block}
+    .card .meta{padding:10px 14px}
+    .title{font-weight:600;font-size:0.95rem;line-height:1.25;color:#0d1b3a}
+
+    @media (max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.grid{grid-template-columns:repeat(1,1fr)}}
+
+    .container{max-width:1100px;margin:0 auto}
+     .btnn{align-items:center;gap:8px;background:var(--accent);color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:1.5rem;font-weight:500;box-shadow:0 3px 10px rgba(0,0,0,0.1);transition:background .2s ease,transform .2s ease}
+  </style>
+  <div class="container">
+
+    <!-- Top Buttons -->
+    <div class="top-buttons">
+      <a href="https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx" class="btn"><i class="fa-solid fa-file-lines"></i> All Important Documents</a>
+      <a href="https://shramevjayate.cg.gov.in/Public/ApplicationBOC_public.aspx" class="btn"><i class="fa-solid fa-user-pen"></i> Registration Form</a>
+      <a href="https://shramevjayate.cg.gov.in/Public/SchemeApplicationStatus_BOC.aspx" class="btn"><i class="fa-solid fa-chart-line"></i> Application Status</a>
+      <a href="https://www.jarurisuchna.xyz/2025/05/animated-about-page-body-margin-0-font.html" class="btn"><i class="fa-solid fa-phone"></i> Helpline</a>
+    </div>
+
+    <h1>श्रम विभाग योजनाएँ</h1>
+    <br>
+    <br>
+    <div class="grid" id="yojnaGrid"></div>
+  </div>
+
+  <script>
+    // JSONP callback function
+    function loadYojnaData(json) {
+      const grid = document.getElementById('yojnaGrid');
+      grid.innerHTML = '';
+      const entries = json.feed.entry || [];
+      entries.forEach(entry => {
+        const title = entry.title.$t;
+        const link = entry.link.find(l => l.rel === 'alternate').href;
+        const content = entry.content.$t;
+        let imgMatch = content.match(/<img[^>]+src=\"([^\"]+)\"/);
+        let imgUrl = imgMatch ? imgMatch[1] : 'https://via.placeholder.com/600x400?text=Yojna';
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = link;
+        card.target = '_blank';
+        card.innerHTML = `<img src="${imgUrl}" alt="${title}"><div class='meta'><div class='title'>${title}</div></div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    // JSONP script tag load
+    const script = document.createElement('script');
+    script.src = 'https://www.jarurisuchna.xyz/feeds/posts/default/-/yojana?alt=json-in-script&callback=loadYojnaData';
+    document.body.appendChild(script);
+  </script>
+<br>
+<br>
+ <center> <a href="https://shramevjayate.cg.gov.in/schemes.aspx" class="btnn"><i class="fa-solid fa-user-pen"></i>  सभी योजना देखे </a></center>
+  <br>
+<br>
+</body>
+</html>
+
+  
+<footer>
+  <p><strong>© 2025 JaruriSuchna.xyz</strong> | सभी अधिकार सुरक्षित</p>
+  <p>यह वेबसाइट <strong>श्रम विभाग की योजनाओं</strong> से जुड़ी जानकारी साझा करने हेतु बनाई गई है।  
+  यहाँ दी गई सूचनाएँ आधिकारिक वेबसाइटों से संकलित की गई हैं।</p>
+  <p><a href="https://www.jarurisuchna.xyz/2025/05/animated-about-page-body-margin-0-font.html">हमारे बारे में</a> | 
+     <a href="https://www.jarurisuchna.xyz/2025/07/terms-and-conditions.html">गोपनीयता नीति</a> | 
+     <a href="https://www.jarurisuchna.xyz/2025/05/animated-about-page-body-margin-0-font.html">संपर्क करें</a></p>
+</footer>
+
+<style>
+footer {
+  text-align: center;
+  background: #0b74da;
+  color: white;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 5px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
+
+</body>
+</html>
